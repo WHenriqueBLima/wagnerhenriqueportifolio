@@ -123,6 +123,10 @@ p:not(:last-of-type),
     font-size: 58%;
   }
 
+  body {
+    margin-top: 8rem;
+  }
+
   .max-width {
     padding: 0 2rem;
     margin-bottom: 12rem;
@@ -131,7 +135,7 @@ p:not(:last-of-type),
 
 @media only screen and (max-width: 425px) {
   body {
-    margin-top: 10rem;
+    margin-top: 7.2rem;
   }
 
   h1 {

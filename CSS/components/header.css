@@ -56,12 +56,20 @@ header .header__right .header__image .background {
   header {
     flex-direction: column-reverse;
     text-align: center;
-    min-height: auto;
-    gap: 3rem;
+    justify-content: flex-start;
+    min-height: 0;
+    gap: 2.4rem;
+    scroll-margin-top: 9rem;
   }
 
   header .header__left p {
     margin: 2rem auto 4rem;
+  }
+
+  header .header__right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   header .header__right .header__image {
@@ -70,6 +78,14 @@ header .header__right .header__image .background {
 }
 
 @media only screen and (max-width: 425px) {
+  header {
+    gap: 2rem;
+  }
+
+  header .header__right .header__image {
+    width: min(31rem, 84vw);
+  }
+
   header .header__right .header__image .wagner {
     min-width: 0;
   }

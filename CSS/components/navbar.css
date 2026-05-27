@@ -54,12 +54,18 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(1rem);
+  }
+
   .navbar .navbar__content {
-    padding: 1.6rem 2rem;
+    min-height: 7.2rem;
+    padding: 1rem 2rem;
   }
 
   .navbar .navbar__content > a img {
-    width: 12rem;
+    width: 11rem;
   }
 
   .navbar .navbar__content .navbar__links {
@@ -72,15 +78,16 @@
   }
 
   .navbar .navbar__content .navbar__mobile img {
-    width: 3.6rem;
-    height: 3.6rem;
+    width: 3.2rem;
+    height: 3.2rem;
     cursor: pointer;
   }
 
   .navbar .navbar__content .navbar__mobile.active .mobile__links {
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(1rem);
     width: min(22rem, calc(100vw - 4rem));
     position: absolute;
     top: calc(100% + 0.8rem);
