@@ -1,5 +1,5 @@
 :root {
-    --wite: #ffffff;
+    --white: #ffffff;
     --gray: #d9d9d9;
     --black: #000000;
     --primary-color: #02073e;
@@ -8,6 +8,5 @@
     --tertiary-color: #a6b1e1;
     --light-tertiary-color: #f3f6fb;
     --text-color: #343d48;
-
-    font-family: 'DM Sans', sans-serif;
+    --font-family: 'DM Sans', sans-serif;
 }

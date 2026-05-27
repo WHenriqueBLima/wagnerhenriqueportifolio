@@ -4,6 +4,7 @@ header {
   align-items: center;
   gap: 4rem;
   scroll-margin-top: 20rem;
+  min-height: calc(100vh - 14rem);
 }
 
 header .header__left {
@@ -20,6 +21,7 @@ header .header__left p {
 header .header__right .header__image {
   position: relative;
   line-height: 0;
+  width: min(40rem, 38vw);
 }
 
 header .header__right .header__image::after {
@@ -35,10 +37,11 @@ header .header__right .header__image::after {
   z-index: -1;
 }
 
-header .header__right .header__image .lucas {
+header .header__right .header__image .wagner {
   border-radius: 0.5rem;
-  min-width: 25rem;
-  max-width: 100%;
+  width: 100%;
+  min-width: 24rem;
+  object-fit: cover;
 }
 
 header .header__right .header__image .background {
@@ -46,15 +49,33 @@ header .header__right .header__image .background {
   top: -4rem;
   right: -2.5rem;
   z-index: -1;
+  width: 45%;
 }
 
 @media only screen and (max-width: 768px) {
   header {
     flex-direction: column-reverse;
     text-align: center;
+    min-height: auto;
+    gap: 3rem;
   }
 
   header .header__left p {
     margin: 2rem auto 4rem;
+  }
+
+  header .header__right .header__image {
+    width: min(32rem, 82vw);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header .header__right .header__image .wagner {
+    min-width: 0;
+  }
+
+  header .header__right .header__image::after {
+    top: -1rem;
+    right: -1rem;
   }
 }

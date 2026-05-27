@@ -6,6 +6,7 @@
 .skills .skills__content {
   padding: 6rem 4rem;
   text-align: center;
+  margin-bottom: 16rem;
 }
 
 .skills .skills__content .description {
@@ -32,8 +33,21 @@
   margin: 0 auto;
 }
 
+.skills .skills__content ul li .image-container img {
+  width: 3.8rem;
+  height: 3.8rem;
+  object-fit: contain;
+}
+
 .skills .skills__content ul li h3 {
   font-size: 1.6rem;
   font-weight: 500;
   margin: 2rem 0 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills .skills__content {
+    padding: 5rem 2rem;
+    margin-bottom: 12rem;
+  }
 }
