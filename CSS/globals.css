@@ -124,7 +124,7 @@ p:not(:last-of-type),
   }
 
   body {
-    margin-top: 8rem;
+    margin-top: 2.4rem;
   }
 
   .max-width {
@@ -135,7 +135,7 @@ p:not(:last-of-type),
 
 @media only screen and (max-width: 425px) {
   body {
-    margin-top: 7.2rem;
+    margin-top: 2rem;
   }
 
   h1 {

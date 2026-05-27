@@ -55,17 +55,23 @@
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: rgba(255, 255, 255, 0.86);
-    backdrop-filter: blur(1rem);
+    background-color: transparent;
+    pointer-events: none;
   }
 
   .navbar .navbar__content {
-    min-height: 7.2rem;
-    padding: 1rem 2rem;
+    min-height: 0;
+    padding: 1.6rem 2rem 0;
+    pointer-events: none;
   }
 
   .navbar .navbar__content > a img {
-    width: 11rem;
+    width: 10.5rem;
+  }
+
+  .navbar .navbar__content > a,
+  .navbar .navbar__content .navbar__mobile {
+    pointer-events: auto;
   }
 
   .navbar .navbar__content .navbar__links {
@@ -78,8 +84,8 @@
   }
 
   .navbar .navbar__content .navbar__mobile img {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
   }
 

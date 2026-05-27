@@ -58,7 +58,8 @@ header .header__right .header__image .background {
     text-align: center;
     justify-content: flex-start;
     min-height: 0;
-    gap: 2.4rem;
+    gap: 2rem;
+    padding-top: 7rem;
     scroll-margin-top: 9rem;
   }
 
@@ -79,7 +80,8 @@ header .header__right .header__image .background {
 
 @media only screen and (max-width: 425px) {
   header {
-    gap: 2rem;
+    gap: 1.8rem;
+    padding-top: 6.4rem;
   }
 
   header .header__right .header__image {
